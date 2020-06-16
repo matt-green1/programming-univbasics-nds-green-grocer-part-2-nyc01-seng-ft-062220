@@ -49,7 +49,8 @@ def checkout(cart, coupons)
   grand_total = 0.00
   counter = 0
   while counter < consolidated_w_discounts_applied.length
-    
+    total_item_price = 
+    grand_total += total_item_price
     counter += 1
   end
   
