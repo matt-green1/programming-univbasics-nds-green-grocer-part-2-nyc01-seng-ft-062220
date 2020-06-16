@@ -31,11 +31,8 @@ end
 def apply_clearance(cart)
   counter = 0
   while counter < cart.length
-    binding-pry
     if cart[counter][:clearance] == true
-     
       clearance_price = (cart[counter][:price] * 0.80).round(2)
-      
       cart[counter][:price] = clearance_price
       
     end
