@@ -52,6 +52,9 @@ def checkout(cart, coupons)
     total_item_price = consolidated_w_discounts_applied[counter][:price] * consolidated_w_discounts_applied[counter][:count]
     grand_total += total_item_price
     counter += 1
+  if grand_total > 100.00
+    grand_total *= .90
+  end
   return grand_total
   end
   
