@@ -36,7 +36,7 @@ def apply_clearance(cart)
       cart[counter][:price] = clearance_price
       
     end
-  counter+=1
+    counter+=1
   end
 end
 
