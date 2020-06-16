@@ -34,7 +34,7 @@ def apply_clearance(cart)
     binding-pry
     if cart[counter][:clearance] == true
       binding.pry
-      clearance_price = (cart[counter][:price] * .80).round(2)
+      clearance_price = (cart[counter][:price] * 0.80).round(2)
       binding.pry
       cart[counter][:price] = clearance_price
       binding.pry
